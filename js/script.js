@@ -71,31 +71,24 @@ function playGame(playerInput){
   let playerMove = getMoveName(playerInput);
 
   displayResult(computerMove,playerMove);
-
-function buttonClicked(){
-  printMessage('Guzik został kliknięty');
 }
+ 
 
-let testButton = document.getElementById('play-paper');
+  const paperbutton = document.getElementById('play-paper');
 
-testButton.addEventListener('click', buttonClicked);
+  paperbutton.addEventListener('click', function(){playGame(1)});
 
-function buttonClicked(){
-  printMessage('Guzik został kliknięty');
-}
 
-let testButton = document.getElementById('play-rock');
+  const rockbutton = document.getElementById('play-rock');
 
-testButton.addEventListener('click', buttonClicked);
+  rockbutton.addEventListener('click', function(){playGame(2)});
 
-function buttonClicked(){
-  printMessage('Guzik został kliknięty');
-}
 
-let testButton = document.getElementById('play-scissors');
+  const scissorsbutton = document.getElementById('play-scissors');
 
-testButton.addEventListener('click', buttonClicked);
-}
+  scissorsbutton.addEventListener('click', function(){playGame(3)});
+
+
 
 
       
